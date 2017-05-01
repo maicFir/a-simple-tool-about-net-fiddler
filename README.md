@@ -8,12 +8,15 @@
  * 4：窃取你手机网页信息，做到本地化调试线上数据
  ***
  ### Fidder长什么样
- * 下载链接：[fiddler](http://baoku.360.cn/soft/show/appid/102430)
+ * 下载链接：[fiddler](http://baoku.360.cn/soft/show/appid/102430 '下载')
  * 本人用的`fiddler4`，直接下载最新版本即可
+ * ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/1.png)
 
  ### fiddler的使用步骤
  * 安装步骤此处省略，点击下一步，下一步即可，像安装qq一样简单
  * 当我们安装好后的打开主界面是这样的
+ 
+     deefrf
  
 
  
