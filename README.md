@@ -10,11 +10,10 @@
 ### Fidder长什么样
  * 下载链接：[fiddler](http://baoku.360.cn/soft/show/appid/102430 '下载')
  * 本人用的`fiddler4`，直接下载最新版本即可
- * [![fidder]](http://baoku.360.cn/soft/show/appid/102430)
-   [fidder]:https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/1.png 
+ * ![fidder](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/1.png)
 
  ### fiddler的使用步骤
- * 安装步骤此处省略，点击下一步，下一步即可，像安装qq一样简单
+ * 安装步骤此处省略，直接点击下一步，下一步即可，像安装qq一样简单
  * 当我们安装好后的打开主界面是这样的
  ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/2.png)
  
@@ -33,9 +32,8 @@
  * (12)	线上地址
  * (13)	本地地址
  ********
-      对于Tools这里面的默认菜单栏默认不要动，因新浪网的请求协议是https,所以要设置成这样(默认不需修改)
-  Tools>Telerik>fiddler O ptions>HTTPS
-  当你刷新网页时，就会出现上以下1标识所监控的网页：
+      对于Tools这里面的默认菜单栏默认不要动，因新浪网的请求协议是https,所以需按以下步骤操作：Tools>Telerik>fiddler Options>HTTPS(默认不需修改)<br/>
+  当你刷新网页时，就会出现以下1标识所监控的网页：
   ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/3.png)
     
 ### 注意下图标识的网页内容:
@@ -44,23 +42,22 @@
   
 ### 如何改掉我标识的两处内容:”今日要闻”改成“今日看点”,2处字体颜色改成绿色？
   * 1:ctrl+u(鼠标右键查看页面源代码)
-  * 2：新建一个空白页面index.html,将1中的页面源代码复制粘贴到新建的空白页index.html中
+  * 2：新建一个空白页面命名为index.html,将1中的页面源代码复制粘贴到新建的空白页index.html中
   ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/5.png)
   
 ###  将上述内容复制到index.html文件中，如下图
   ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/6.png)
-* 3：鼠标右键选择1处监控的指定页面，在右侧AutoResonder>Enable rules(勾上)>addRule>下面就出现一个选项4
+* 3：鼠标右键选择1处监控的指定页面，在右侧AutoResonder>Enable rules(勾上)>Add Rule>下面就会出现一个选项4
 * 4：然后选择图中的2选项，AutoResonder>Enable rules(勾上)>unmatched requestspassthough(勾上)
     ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/7.png)
 * 5：在下方的2处选择步骤2所在的文件目录：
   ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/8.png)
   ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/9.png)
-* 6:此时可以修改步骤2中的index.html页面
-* 7:此时你会发现，当你刷新chrome浏览器，你刚抓取的页面样式全部没有了，确是这样的
-  
-    ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/10.png)
-* 8：原来在步骤4上一定要勾住此项unmatched requestspassthough（勾住）。
-* 9:当上述8操作后，当再刷新页面，页面就正常了,如下图
+* 6:此时可修改步骤2中的index.html页面
+* 7:但是你会发现，当你刷新chrome浏览器，你刚抓取的页面样式全部没有了，怎么会这样?不管怎么刷新都没用（因为fidder劫持了网页信息）
+    ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/10.png)
+* 8：原来在步骤4上一定要勾住此项unmatched requestspassthough（`勾住`）。
+* 9:当上述8操作后，再刷新页面，页面就正常了,如下图
   ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/11.png)
 * 10：修改空白页面index.html的”今日看点”且添加内联样式
    ![](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/12.png) 
