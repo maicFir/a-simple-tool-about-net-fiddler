@@ -1,16 +1,16 @@
 ### a-simple-tool-about-net-fiddler
-前言：fidder的官方名词解释是，一款http协议调试的代理工具，能够获取浏览器请求网页的所有信息。通俗来讲就是抓包，能够劫持网页的请求信息，对线上代码css,js,html以及cookie进行修改，同时也可作为调试手机端页面的一种强大利器。
+前言：fiddler的官方名词解释是，一款http协议调试的代理工具，能够获取浏览器请求网页的所有信息。通俗来讲就是抓包，能够劫持网页的请求信息，对线上代码css,js,html以及cookie进行修改，同时也可作为调试手机端页面的一种强大利器。
 ### 长话短说，首先你在看本文，你将从本文中获得什么样的信息：
 
  * 1：对抓包工具的基本认识，一些自己踩过的坑 
- * 2：如何设置fidder工具，抓取网页页面
+ * 2：如何设置fiddler工具，抓取网页页面
  * 3: 如何在本地修改一个线上的网页页面(新浪官网为例)
  * 4：窃取你手机网页信息，做到本地化调试线上数据
  ***
 ### Fidder长什么样
  * 下载链接：[fiddler](http://baoku.360.cn/soft/show/appid/102430 '下载')
  * 本人用的`fiddler4`，直接下载最新版本即可
- * ![fidder](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/1.png)
+ * ![fiddler](https://github.com/maicFir/a-simple-tool-about-net-fiddler/blob/master/img/1.png)
 
  ### fiddler的使用步骤
  * 安装步骤此处省略，直接点击下一步，下一步即可，像安装qq一样简单
